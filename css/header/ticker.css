@@ -1,0 +1,39 @@
+.ticker {
+  background: var(--brown);
+  overflow: hidden;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto";
+  position: relative;
+  z-index: 5;
+
+  /* anti-risca renderização mobile */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+}
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: tickerMove linear infinite;
+  transform: translate3d(0,0,0);
+  will-change: transform;
+}
+
+.ticker-content {
+  white-space: nowrap;
+  padding-right: 10rem; /* espaço GRANDE e INTENCIONAL */
+  font-size: clamp(0.72rem, 1.8vw, 0.78rem);
+  font-weight: 300;
+  color: #F7EFE6;
+  letter-spacing: 0.4px;
+}
+
+@keyframes tickerMove {
+  from { transform: translateX(0); }
+  to   { transform: translateX(calc(-1 * var(--ticker-width))); }
+}
