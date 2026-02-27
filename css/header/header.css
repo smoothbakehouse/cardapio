@@ -1,7 +1,7 @@
 /* ========================= HEADER / NAV ========================= */
 
 .header {
-  margin-top: -3px;
+  margin-top: 0px;
   background: var(--rose);
   border-bottom: none;
   position: sticky;
@@ -336,6 +336,7 @@
 .theme-toggle {
   display: none !important;
 }
+
 
 
 
