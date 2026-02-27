@@ -157,13 +157,15 @@
     pointer-events: none;
     transform: translateY(-20px);
     transition: 0.3s ease;
-    border-bottom: 1px solid var(--border);
+    /*border-bottom: 1px solid var(--border);*/
+    border-bottom: none;
   }
 
   .nav-list.active {
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
+    border-bottom: 1px solid var(--border);
   }
 }
 
