@@ -3,7 +3,7 @@
    ========================================================= */
 
 .home {
- margin-top: -1px;
+ margin-top: -3px;
   background:#F7EFE6;
   padding: 3rem 0;
   padding-bottom: 1.2rem; /* ⬅ reduz só embaixo */
@@ -250,5 +250,6 @@
     transform: translateX(-0.45em);
   }
 }
+
 
 
