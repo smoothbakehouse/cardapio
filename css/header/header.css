@@ -6,6 +6,18 @@
   position: sticky;
   top: 0;
   z-index: 20;
+  /* cobre a safe-area do status bar (PWA / notch) e elimina a faixa */
+  overflow: visible;
+}
+
+.header::before{
+  content:"";
+  position:absolute;
+  left:0; right:0;
+  top: calc(-1 * env(safe-area-inset-top));
+  height: env(safe-area-inset-top);
+  background: var(--rose);
+
 }
 
 /* ---- CONTAINER DO HEADER ---- */
@@ -323,3 +335,4 @@
 .theme-toggle {
   display: none !important;
 }
+
