@@ -71,6 +71,28 @@
   body { background: #F7EFE6; }
 </style>
 	
+
+
+
+
+
+<script>
+  (function () {
+    // meta temporária (bege) só durante o carregamento
+    var temp = document.createElement('meta');
+    temp.name = 'theme-color';
+    temp.content = '#F7EFE6';
+    temp.setAttribute('data-temp-theme', '1');
+    document.head.appendChild(temp);
+
+    // quando terminar, remove o temporário e volta a valer o rosa que já existe
+    window.addEventListener('load', function () {
+      var m = document.querySelector('meta[data-temp-theme="1"]');
+      if (m) m.remove();
+    });
+  })();
+</script>
+
 	
 </head>
 
