@@ -1,8 +1,14 @@
 /* ========================= GLOBAL BASE ========================= */
 /* Este arquivo define padrões universais usados pelo site todo. */
 /* Nada aqui deve ser específico de header, home, cookies, etc.  */
-html {
+
+
+/*html {
   background-color: #F7EFE6 !important;
+}*/
+
+html{
+  background: var(--rose) !important; /* se vazar 1px no topo, fica rosa */
 }
 
 
@@ -425,4 +431,5 @@ body.app-ready {
 
 .smooth-alert-btn:hover{
   transform:translateY(-1px);
+
 }
