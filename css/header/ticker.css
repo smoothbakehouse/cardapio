@@ -13,6 +13,7 @@
   -webkit-transform: translateZ(0);
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  margin-bottom: -1px; /* cola ticker no header (mata a fresta) */
 
 }
 
@@ -45,3 +46,4 @@
     padding-top: 1px;*/
   }
 }
+
