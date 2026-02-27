@@ -17,6 +17,20 @@ html{
 }
 
 
+/* =========================================================
+   TOP-SEAL — elimina fresta (risca) 1–2px no topo (Android/PWA)
+   ========================================================= */
+.top-seal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;              /* se ainda aparecer, sobe pra 3px */
+  background: var(--rose);  /* mantém o topo “tudo rosa” */
+  z-index: 999999;
+  pointer-events: none;
+}
+
 
 /* ------------------------- TIPOGRAFIA ------------------------- */
 html, body {
@@ -431,5 +445,4 @@ body.app-ready {
 
 .smooth-alert-btn:hover{
   transform:translateY(-1px);
-
 }
