@@ -9,6 +9,8 @@
   z-index: 20;
   /* cobre a safe-area do status bar (PWA / notch) e elimina a faixa */
   overflow: visible;
+  transform: translateZ(0); /* evita costura subpixel com sticky */
+  -webkit-transform: translateZ(0);
 }
 
 .header::before{
@@ -336,6 +338,7 @@
 .theme-toggle {
   display: none !important;
 }
+
 
 
 
