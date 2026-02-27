@@ -446,3 +446,16 @@ body.app-ready {
 .smooth-alert-btn:hover{
   transform:translateY(-1px);
 }
+
+
+
+/* DEBUG RISCA — TEMP (remover depois) */
+.header { outline: 2px solid lime !important; }
+.ticker { outline: 2px solid cyan !important; }
+.home   { outline: 2px solid orange !important; }
+
+/* tenta matar sombras/bordas invisíveis */
+.header, .ticker, .nav, .nav-list {
+  box-shadow: none !important;
+  border: 0 !important;
+}
